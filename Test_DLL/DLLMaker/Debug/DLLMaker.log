@@ -1,0 +1,11 @@
+﻿  Func.cpp
+F:\Github_Repository\C++\DLL_Demo\Test_DLL\DLLMaker\Func.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\Github_Repository\C++\DLL_Demo\Test_DLL\DLLMaker\Func.cpp(15,26): warning C4018: “<”: 有符号/无符号不匹配
+F:\Github_Repository\C++\DLL_Demo\Test_DLL\DLLMaker\Func.cpp(17,1): warning C4297: “GetData”: 假定函数不引发异常，但确实发生了
+F:\Github_Repository\C++\DLL_Demo\Test_DLL\DLLMaker\Func.cpp(17,1): message : 函数是 extern "C" 并且指定了 /EHc
+F:\Github_Repository\C++\DLL_Demo\Test_DLL\DLLMaker\Func.cpp(21,26): warning C4018: “<”: 有符号/无符号不匹配
+F:\Github_Repository\C++\DLL_Demo\Test_DLL\DLLMaker\Func.cpp(29,26): warning C4018: “<”: 有符号/无符号不匹配
+  Data.cpp
+  正在生成代码...
+    正在创建库 F:\Github_Repository\C++\DLL_Demo\Test_DLL\Debug\DLLMaker.lib 和对象 F:\Github_Repository\C++\DLL_Demo\Test_DLL\Debug\DLLMaker.exp
+  DLLMaker.vcxproj -> F:\Github_Repository\C++\DLL_Demo\Test_DLL\Debug\DLLMaker.dll
