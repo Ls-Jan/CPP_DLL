@@ -119,7 +119,7 @@ dll函数接口的参数和返回值类型均是C语言的数据类型，也就�
 <br>
 
 #### 其他参考：
-Linux下的静态库/动态库：[https://blog.csdn.net/weixin_47826078/article/details/120474883](https://blog.csdn.net/weixin_47826078/article/details/120474883)
-
+- Linux下的静态库/动态库：[https://blog.csdn.net/weixin_47826078/article/details/120474883](https://blog.csdn.net/weixin_47826078/article/details/120474883)
+- C#调用DLL的几种方法，包括C#调用C\C++\C#DLL：[https://zhuanlan.zhihu.com/p/72450434](https://zhuanlan.zhihu.com/p/72450434)
 <br>
 
