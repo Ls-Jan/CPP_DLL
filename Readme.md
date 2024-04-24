@@ -115,11 +115,23 @@ dll函数接口的参数和返回值类型均是C语言的数据类型，也就�
 本示例中的``CreateRandomNums``生成``vector<int>``容器，返回的是该容器的指针，
 通过``At``函数访问该容器的对应数据(而不是强转为``vector<int>*``，再次强调，这非常危险且不可理喻)。
 
+<br>
+
+#### 额外补充：
+
+上面的一些观点有问题，在此勘误，并新增两个DLL测试项(用于测试结构体``struct``)。
+1. 对于C以外的东西，或者说C++特有的东西，例如类(vector<int>)等，放进dll并暴露出来的直接下场都是暴毙，这没得说的，但如果使用的是C的结构体数据则可以进行强转，前提是设置好一模一样的数据结构，并且还得看语言的支持情况，例如Python虽然支持结构体，但对于一些特殊情况(例如结构体有“位域”数据)则直接说明是“一种未定义行为”；
+2. 在本项目中附加了Python对dll的调用测试样例，路径为[./LinkDLL_StructData/LinkDLL_StructData.py](./LinkDLL_StructData/LinkDLL_StructData.py)
+3. 有的观点依旧认为返回指针是一件不妥的事，嘛，我持中立意见，毕竟我也不能打包票说绝对不会对dll返回的指针进行强转/解析来获取数据，是有那么一些应用场景呢？
+4. 对于dll中通过``new``或者``malloc``创造返回的指针，需秉承“打哪来回哪去”的做法，即指针由dll创造，则这个指针的资源也该由dll释放；
 
 <br>
 
 #### 其他参考：
 - Linux下的静态库/动态库：[https://blog.csdn.net/weixin_47826078/article/details/120474883](https://blog.csdn.net/weixin_47826078/article/details/120474883)
 - C#调用DLL的几种方法，包括C#调用C\C++\C#DLL：[https://zhuanlan.zhihu.com/p/72450434](https://zhuanlan.zhihu.com/p/72450434)
+- ctypes-结构体和联合：[https://docs.python.org/zh-cn/3.7/library/ctypes.html#structures-and-unions](https://docs.python.org/zh-cn/3.7/library/ctypes.html#structures-and-unions)
+
+
 <br>
 
